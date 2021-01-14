@@ -1,0 +1,115 @@
+.mdc-tab-bar {
+    padding-top: 50px;
+}
+
+#search {
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+    height: 300px;
+    &::after {
+        background-color: #3655B3;
+        content: '';
+        position: absolute;
+        top: 0px;
+        opacity: 0.5;
+        min-height: 300px;
+        width: 100%;
+        left: 0px;
+        z-index: 1;
+        overflow: hidden;
+    }
+}
+
+.search-form {
+    position: absolute;
+    top: 14%;
+    left: 25%;
+    right: 25%;
+    z-index: 2;
+    background: blur;
+}
+
+.search-wrapper {
+    background: var(--seco-color);
+    min-height: 200px;
+    border-radius: 25px;
+    border: 1px solid var(--secondary-color);
+    padding: 15px;
+    display: block;
+    text-transform: uppercase;
+    background: rgba( 134, 153, 209, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 5.0px);
+    -webkit-backdrop-filter: blur( 5.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    h1 {
+        color: #fff;
+        font-family: var(--headings-font-family);
+        font-weight: bold;
+        font-size: 37px;
+        text-align: center;
+    }
+    h5 {
+        color: #fff;
+        font-family: var(--headings-font-family);
+        font-size: 25px;
+        font-weight: normal;
+        text-align: center;
+    }
+}
+
+.search {
+    margin: auto;
+    vertical-align: auto;
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-right: 1px solid #3655B3;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        &:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #86b7fe00;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+        }
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 0px 10px;
+    line-height: 37px;
+    height: auto;
+    margin-left: -2px;
+}
+
+.right {
+    justify-content: end;
+    float: right;
+}
+
+.move {
+    animation: MoveUpDown 2.5s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}

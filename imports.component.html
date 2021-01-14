@@ -1,0 +1,10 @@
+<app-search (searchSubmit)="onSearchSubmit($event)"></app-search>
+<button (click)="onBtExport()">Get Selected Rows</button>
+
+<div class="col-sm-12">
+    <div class="pcoded-inner-content">
+        <ag-grid-angular id="myGrid" style="width:100%; height:500px;" class="ag-theme-alpine" [rowSelection]="rowSelection" [defaultColDef]="defaultColDef" [rowData]="rowData" [columnDefs]="colDef" [suppressRowClickSelection]="true" [rowSelection]="rowSelection"
+            [multiSortKey]="ture" [pagination]="true" [sideBar]="true" [paginationPageSize]="50" [suppressContextMenu]="true" [autoGroupColumnDef]="autoGroupColumnDef" [animateRows]="true">
+        </ag-grid-angular>
+    </div>
+</div>

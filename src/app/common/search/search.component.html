@@ -1,0 +1,70 @@
+<div id="search">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="left">
+                    <img class="move" src="../../assets/images/search/1.png">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="right">
+                    <img class="move" src="../../assets/images/search/1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class='search-form'>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="search-wrapper justify-content-center">
+                        <h1>Search us import data with</h1>
+                        <h5>Buyers and suppliers</h5>
+                        <div class="align-items-center justify-content-center">
+                            <div class="search">
+                                <div class="col-lg-12">
+                                    <form class="form" [formGroup]="searchForm" (ngSubmit)="onDataSearch(searchForm)">
+
+                                        <div class="row cf px-3">
+                                            <div class="col-sm-2 px-0">
+                                                <div class="input-group input-group-inverse">
+                                                    <select class="form-control fill" id="datatype-field" formControlName="mode"> 
+                            <option value="">Select Type</option>
+                            <option value="imports">Import</option> 
+                        </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-sm-3 px-0">
+                                                <div class="input-group input-group-inverse">
+                                                    <input type="text" formControlName="product" class="form-control" placeholder="Product" />
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 px-0">
+                                                <div class="input-group input-group-inverse">
+                                                    <input type="text" formControlName="hscode" class="form-control" placeholder="Hs Code" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 px-0">
+                                                <div class="input-group input-group-inverse">
+                                                    <input type="text" formControlName="country" class="form-control" placeholder="Country" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-2 px-0">
+                                                <button [class.spinner]="loading" [disabled]="loading" type="submit">Search</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

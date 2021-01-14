@@ -1,0 +1,39 @@
+@import '../../sass/variables';
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e4e4e661;
+    border-radius: 0px;
+    .card-header {
+        padding: .5rem 1rem;
+        margin-bottom: 0;
+        background-color: rgb(255 255 255 / 3%);
+        border-bottom: 1px solid #4d6aca;
+    }
+    .card-body {
+        text-align: center;
+        p {
+            color: #3D75F2;
+            font-family: $paragraph-font;
+        }
+        h4 {
+            color: #3D75F2;
+            font-weight: 600;
+            font-size: 30px;
+            font-family: 'Muli';
+        }
+    }
+    &.active {
+        background: #fff;
+        box-shadow: 0 7px 5px -3px #212529;
+        border-bottom: 0px !important;
+    }
+    .no-border {
+        border: none !important;
+    }
+}

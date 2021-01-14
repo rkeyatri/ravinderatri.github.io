@@ -1,0 +1,115 @@
+<div class="row g-0">
+
+    <div class="col-md-2">
+        <div class="card active">
+            <div class="card-body">
+                <p> <i class="fa fa-right"></i>Total Importer</p>
+                <h4>{{importer.length}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <div class="card-body">
+                <p>Total Exporter</p>
+                <h4>{{exporter.length}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <div class="card-body">
+                <p><i class="fa fa-globe"></i>Total Country</p>
+                <h4>{{country.length}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <div class="card-body">
+                <p>Total Hs Code</p>
+                <h4>{{exporter.length}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <div class="card-body">
+                <p>Total Port</p>
+                <h4>{{port.length}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <div class="card-body">
+                <p>Total Unit</p>
+                <h4>{{unit.length}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row g-2 pt-3">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header">Country</div>
+                <div class="card-body">
+                    <ngx-charts-bar-horizontal [view]="view" [scheme]="colorScheme" [results]="country" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                        [yAxisLabel]="yAxisLabel">
+                    </ngx-charts-bar-horizontal>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header">Month</div>
+                <div class="card-body">
+                    <ngx-charts-bar-vertical [view]="view" [scheme]="colorScheme" [results]="month" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                        [yAxisLabel]="yAxisLabel">
+                    </ngx-charts-bar-vertical>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header">Importer</div>
+                <div class="card-body">
+                    <ngx-charts-bar-vertical [view]="view" [scheme]="colorScheme" [results]="importer" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                        [yAxisLabel]="yAxisLabel">
+                    </ngx-charts-bar-vertical>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header">Exporter</div>
+                <div class="card-body">
+                    <ngx-charts-bar-vertical [view]="view" [scheme]="colorScheme" [results]="exporter" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                        [yAxisLabel]="yAxisLabel">
+                    </ngx-charts-bar-vertical>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header">Unit</div>
+                <div class="card-body">
+                    <ngx-charts-bar-vertical [view]="view" [scheme]="colorScheme" [results]="unit" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                        [yAxisLabel]="yAxisLabel">
+                    </ngx-charts-bar-vertical>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header">Port</div>
+                <div class="card-body">
+                    <ngx-charts-bar-vertical [view]="view" [scheme]="colorScheme" [results]="port" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                        [yAxisLabel]="yAxisLabel">
+                    </ngx-charts-bar-vertical>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<app-search (searchSubmit)="onSearchSubmit($event)"></app-search>
+
+<div class="col-sm-12">
+    <div class="pcoded-inner-content">
+        <ag-grid-angular id="myGrid" style="width:100%; height:500px;" class="ag-theme-alpine" [defaultColDef]="defaultColDef" [rowSelection]="rowSelection" [defaultColDef]="defaultColDef" [rowData]="rowData" [columnDefs]="colDef" [pagination]="true" [sideBar]="true"
+            [paginationPageSize]="30" [suppressContextMenu]="true" [autoGroupColumnDef]="autoGroupColumnDef" [animateRows]="true">
+        </ag-grid-angular>
+    </div>
+</div>
